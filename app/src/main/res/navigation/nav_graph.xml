@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/studentFragment">
+    <fragment
+        android:id="@+id/studentFragment"
+        android:name="com.example.studentmanager.fragment.StudentFragment"
+        android:label="StudentFragment">
+        <action android:id="@+id/edit_student_details" app:destination="@+id/editFragment"/>
+        <action android:id="@+id/add_student" app:destination="@+id/addFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.studentmanager.fragment.AddFragment"
+        android:label="AddFragment">
+        <argument
+            android:name="name"
+            app:argType="string"
+            app:nullable="false"
+            android:defaultValue=""/>
+        <argument
+            android:name="id"
+            app:argType="string"
+            app:nullable="false"
+            android:defaultValue=""/>
+        <argument
+            android:name="position"
+            app:argType="integer"
+            app:nullable="false"
+            android:defaultValue="-1"/>
+        <action
+            android:id = "@+id/added"
+            app:destination="@+id/studentFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.example.studentmanager.fragment.EditFragment"
+        android:label="EditFragment">
+        <argument
+            android:name="name"
+            app:argType="string"
+            app:nullable="false"
+            android:defaultValue=""/>
+        <argument
+            android:name="id"
+            app:argType="string"
+            app:nullable="false"
+            android:defaultValue=""/>
+        <argument
+            android:name="position"
+            app:argType="integer"
+            app:nullable="false"
+            android:defaultValue="-1"/>
+        <action
+            android:id="@+id/updated"
+            app:destination="@+id/studentFragment"/>
+    </fragment>
+
+</navigation>

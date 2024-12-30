@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">StudentManager</string>
+    <string name="student_name">Student Name</string>
+    <string name="student_id">Student ID</string>
+    <string name="add_student_title">Thêm sinh viên mới</string>
+    <string name="full_name">Họ và tên</string>
+    <string name="hint_for_student_name">Nhập họ và tên của sinh viên</string>
+    <string name="id">Mã số sinh viên</string>
+    <string name="hint_for_student_id">Nhập mã số sinh viên</string>
+    <string name="add">Thêm</string>
+    <string name="cancel">Hủy</string>
+    <string name="arrow_back">Back button</string>
+    <string name="edit_student_title">Cập nhật thông tin sinh viên</string>
+    <string name="edit">Cập nhật</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit_details">Sửa thông tin</string>
+    <string name="delete_details">Xóa thông tin</string>
+    <string name="main_title">Quản lý thông tin sinh viên</string>
+</resources>
